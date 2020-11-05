@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crane: Team Red on Martha Lucia Borras Guevara, Vladimir Finkelshtein, Sandro Mignuzzi and Anzhela Shestakova</title>
-    <link>https://github.com/TuchisAnalyst/Crane-Data-Science-Project/about/</link>
+    <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/about/</link>
     <description>Recent content in Crane: Team Red on Martha Lucia Borras Guevara, Vladimir Finkelshtein, Sandro Mignuzzi and Anzhela Shestakova</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://github.com/TuchisAnalyst/Crane-Data-Science-Project/about/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
