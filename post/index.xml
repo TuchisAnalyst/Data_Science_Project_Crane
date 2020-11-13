@@ -1,41 +1,65 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project parts on Martha Lucia Borras Guevara, Vladimir Finkelshtein, Sandro Mignuzzi and Anzhela Shestakova</title>
+    <title>Final Recommendation on Martha Lucia Borras Guevara, Vladimir Finkelshtein, Sandro Mignuzzi and Anzhela Shestakova</title>
     <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/</link>
-    <description>Recent content in Project parts on Martha Lucia Borras Guevara, Vladimir Finkelshtein, Sandro Mignuzzi and Anzhela Shestakova</description>
+    <description>Recent content in Final Recommendation on Martha Lucia Borras Guevara, Vladimir Finkelshtein, Sandro Mignuzzi and Anzhela Shestakova</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Part 1: Preparing and cleaning of the data</title>
+      <title>Step 1: SQL Server &lt;&gt; Python</title>
       <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Nov 2020 12:00:00 -0500</pubDate>
       
       <guid>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-1/</guid>
-      <description>Preparing a dataset will usually require some manipulation and adaptation before any kind of analyses con be performed, especially if you need to aggregate other sources of data for the analysis.
- Step 1: Data Preparation - Began with finding the right data from different sources provided by the company. Step 2: Discovering ans assesment - This step was about getting to know the data and understanding what had to be done before any analyses were done.</description>
+      <description>The first step involved downloading the training set, which will be done monthly. The testing set will be downloaded hourly or by user request. Below a guide to achieving this.
+ DOWNLOADING training set (monthly)  Required files:dataset1 dataset2 dataset3 Libraries required import pyodbc import pandas as pd Accesing SQL server with open(r&amp;#39;C:\Users\path to where your connection credential are.txt&amp;#39;) as file: SQL_credentials = file.read().replace(&amp;#39;\n&amp;#39;, &amp;#39;&amp;#39;) conn = pyodbc.connect(SQL_credentials) Querring variables from SQLsql_query = pd.</description>
     </item>
     
     <item>
-      <title>Part 2: Development of the recommendation engine</title>
+      <title>Step 2: Recommendation engine</title>
       <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Nov 2020 09:01:00 -0500</pubDate>
       
       <guid>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-2/</guid>
-      <description>An implicit recommendation system was used to increase market share growth for Crane. This system is a subclass of information filtering strategy that seeks to predict a contractor&amp;rsquo;s preferences for a given product. Higher preference predictons will result in a recommendation.
-  Step 1: Data Preparation - Began with finding the right data from different sources provided by the company.
-  Step 2: Discovering ans assesment - This step was about getting to know the data and understanding what had to be done before any analyses were done.</description>
+      <description>An implicit recommendation system was used to increase market share growth for Crane. This was done for FastTrack and Valve Selector quotes. Two models were developed using different algorithms: one based on K- Nearest neighbor (KNN) and the other other based on Alternate least squares (ALS) algorithms.
+ FastTrack Quotes  Required files:dataset1 dataset2 dataset3 Libraries requiredimport pyodbc import pandas as pd   Valve Selector Quotes:  Required files:dataset1 dataset2 dataset3 Libraries requiredimport pyodbc import pandas as pd    </description>
     </item>
     
     <item>
-      <title>Part 3: Recommendation engine integration with Qlikview</title>
+      <title>Step 3: Quantity Model</title>
       <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 05 Nov 2020 08:01:00 -0500</pubDate>
       
       <guid>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-3/</guid>
-      <description>A major part of this project&amp;rsquo;s scope was to integrate our python code and models into the existing Crane BS analytics environment, which is hosted on the analytics platform QlikView. You can find a step by step guide here.
-Change!</description>
+      <description>A very important part of this project&amp;rsquo;s scope was to suggest a quantity per item recommended by the recommendation engine. This involved
+  Import library import pandas as pd import numpy as np import os.path
+  Load quotes and aggreagate quantities def load_quotes(path): df = pd.read_csv(path)[[&amp;#39;PART&amp;#39;, &amp;#39;Quote Number&amp;#39;, &amp;#39;Claim Qty&amp;#39;]] df.dropna(inplace=True) df_table = df.pivot_table(index=&amp;#39;Quote Number&amp;#39;, columns=&amp;#39;PART&amp;#39;, values=&amp;#39;Claim Qty&amp;#39;, aggfunc=&amp;#39;sum&amp;#39;) df = df_table.reset_index().melt(id_vars=[&amp;#39;Quote Number&amp;#39;], value_name=&amp;#39;Claim Qty&amp;#39;).dropna() df = df[df[&amp;#39;Claim Qty&amp;#39;]&amp;gt;0] return df</description>
+    </item>
+    
+    <item>
+      <title>Step 4: Pricing Model</title>
+      <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-4/</link>
+      <pubDate>Thu, 05 Nov 2020 08:01:00 -0500</pubDate>
+      
+      <guid>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-4/</guid>
+      <description>A major part of this project&amp;rsquo;s scope was to integrate the python code and models into the existing Crane BS analytics environment, which is hosted on SQL. You can find a step by step guide here.
+  Import library import pandas as pd
+  Upload .xls data to DataFrame def getData(): data=pd.read_excel(r&amp;#39;C:\Users\path to your file.xlsx&amp;#39;) return(data)
+  Get the clean data set def cleanData(): input=getData() output=input.drop_duplicates().dropna() return(output)</description>
+    </item>
+    
+    <item>
+      <title>Step 5: Python &lt;&gt; SQL Server</title>
+      <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-5/</link>
+      <pubDate>Thu, 05 Nov 2020 08:01:00 -0500</pubDate>
+      
+      <guid>https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-5/</guid>
+      <description>A major part of this project&amp;rsquo;s scope was to integrate the python code and models into the existing Crane BS analytics environment, which is hosted on SQL. You can find a step by step guide here.
+  Import library import pandas as pd
+  Upload .xls data to DataFrame def getData(): data=pd.read_excel(r&amp;#39;C:\Users\path to your file.xlsx&amp;#39;) return(data)
+  Get the clean data set def cleanData(): input=getData() output=input.drop_duplicates().dropna() return(output)</description>
     </item>
     
   </channel>

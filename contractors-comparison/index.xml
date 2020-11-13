@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contractor&#39;s Comparison on Martha Lucia Borras Guevara, Vladimir Finkelshtein, Sandro Mignuzzi and Anzhela Shestakova</title>
+    <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/contractors-comparison/</link>
+    <description>Recent content in Contractor&#39;s Comparison on Martha Lucia Borras Guevara, Vladimir Finkelshtein, Sandro Mignuzzi and Anzhela Shestakova</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/contractors-comparison/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contractor&#39;s clustering by spending patterns</title>
+      <link>https://tuchisanalyst.github.io/Data_Science_Project_Crane/contractors-comparison/project-1/</link>
+      <pubDate>Thu, 05 Nov 2020 12:00:00 -0500</pubDate>
+      
+      <guid>https://tuchisanalyst.github.io/Data_Science_Project_Crane/contractors-comparison/project-1/</guid>
+      <description> CLUSTERING by product TYPE preference  Required files:dataset1 dataset2 dataset3 Libraries required import pandas as pd   CLUSTERING by product SIZE preference  Required files:dataset1 dataset2 dataset3    </description>
+    </item>
+    
+  </channel>
+</rss>

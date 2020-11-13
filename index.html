@@ -36,7 +36,7 @@
 <meta property="og:description" content="This project’s main aim was to identify bundling opportunities that result in an increase of market share while maintaining the target margin for the company" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://tuchisanalyst.github.io/Data_Science_Project_Crane/" />
-<meta property="og:updated_time" content="2017-03-02T12:00:00-05:00" />
+<meta property="og:updated_time" content="2020-11-05T12:00:00-05:00" />
 <meta itemprop="name" content="Crane: Data Science Project">
 <meta itemprop="description" content="This project’s main aim was to identify bundling opportunities that result in an increase of market share while maintaining the target margin for the company">
 <meta name="twitter:card" content="summary"/>
@@ -74,14 +74,20 @@
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/about/" title="Crane: Team Red page">
-              Crane: Team Red
+            <a class="hover-white no-underline white-90" href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/contractors-comparison/" title="Contractor&#39;s Comparison page">
+              Contractor&#39;s Comparison
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/" title="Project parts page">
-              Project parts
+            <a class="hover-white no-underline white-90" href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/" title="Final Recommendation page">
+              Final Recommendation
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/about/" title="Red Team page">
+              Red Team
             </a>
           </li>
           
@@ -132,7 +138,7 @@
     <main class="pb7" role="main">
       
   <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    <p>Welcome to our Data Science project for Crane BS. Here you will find every step followed to develop an implicit recommendation system. You can go to each step followed in the sections below.</p>
+    <p>Welcome to our Data Science project for Crane BS. Here you will find every step followed to find opportunities to increase the company&rsquo;s market share. Two approaches were taken. One based on an implicit recommendation system, and another based on contractor&rsquo;s profiles.</p>
 
   </article>
   
@@ -149,7 +155,7 @@
       
        
           <h1 class="flex-none">
-            Recent Project parts
+            Recent Final Recommendation
           </h1>
         
 
@@ -168,19 +174,19 @@
         
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-1/" class="db grow">
-            <img src="https://tuchisanalyst.github.io/Data_Science_Project_Crane/images/datacleaning.jpg" class="img" alt="image from Part 1: Preparing and cleaning of the data">
+            <img src="https://tuchisanalyst.github.io/Data_Science_Project_Crane/images/sqltopython.jpg" class="img" alt="image from Step 1: SQL Server &lt;&gt; Python">
           </a>
         </div>
       
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-1/" class="color-inherit dim link">
-            Part 1: Preparing and cleaning of the data
+            Step 1: SQL Server &lt;&gt; Python
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Preparing a dataset will usually require some manipulation and adaptation before any kind of analyses con be performed, especially if you need to aggregate other sources of data for the analysis.
- Step 1: Data Preparation - Began with finding the right data from different sources provided by the company. Step 2: Discovering ans assesment - This step was about getting to know the data and understanding what had to be done before any analyses were done.
+          The first step involved downloading the training set, which will be done monthly. The testing set will be downloaded hourly or by user request. Below a guide to achieving this.
+ DOWNLOADING training set (monthly)  Required files:dataset1 dataset2 dataset3 Libraries required import pyodbc import pandas as pd Accesing SQL server with open(r&#39;C:\Users\path to where your connection credential are.txt&#39;) as file: SQL_credentials = file.read().replace(&#39;\n&#39;, &#39;&#39;) conn = pyodbc.connect(SQL_credentials) Querring variables from SQLsql_query = pd.
         </div>
           <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
@@ -201,20 +207,19 @@
         
         <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
           <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-2/" class="db grow">
-            <img src="https://tuchisanalyst.github.io/Data_Science_Project_Crane/images/recommendationengine.jpg" class="img" alt="image from Part 2: Development of the recommendation engine">
+            <img src="https://tuchisanalyst.github.io/Data_Science_Project_Crane/images/engine2.jpg" class="img" alt="image from Step 2: Recommendation engine">
           </a>
         </div>
       
       <div class="blah w-100 w-60-ns pl3-ns">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-2/" class="color-inherit dim link">
-            Part 2: Development of the recommendation engine
+            Step 2: Recommendation engine
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          An implicit recommendation system was used to increase market share growth for Crane. This system is a subclass of information filtering strategy that seeks to predict a contractor&rsquo;s preferences for a given product. Higher preference predictons will result in a recommendation.
-  Step 1: Data Preparation - Began with finding the right data from different sources provided by the company.
-  Step 2: Discovering ans assesment - This step was about getting to know the data and understanding what had to be done before any analyses were done.
+          An implicit recommendation system was used to increase market share growth for Crane. This was done for FastTrack and Valve Selector quotes. Two models were developed using different algorithms: one based on K- Nearest neighbor (KNN) and the other other based on Alternate least squares (ALS) algorithms.
+ FastTrack Quotes  Required files:dataset1 dataset2 dataset3 Libraries requiredimport pyodbc import pandas as pd   Valve Selector Quotes:  Required files:dataset1 dataset2 dataset3 Libraries requiredimport pyodbc import pandas as pd    
         </div>
           <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
@@ -234,14 +239,26 @@
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-3/" class="link black dim">
-              Part 3: Recommendation engine integration with Qlikview
+              Step 3: Quantity Model
+            </a>
+          </h2>
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-4/" class="link black dim">
+              Step 4: Pricing Model
+            </a>
+          </h2>
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/project-5/" class="link black dim">
+              Step 5: Python &lt;&gt; SQL Server
             </a>
           </h2>
         
 
         
         
-          <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Project parts</a>
+          <a href="https://tuchisanalyst.github.io/Data_Science_Project_Crane/post/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Final Recommendation</a>
         
         </section>
       
